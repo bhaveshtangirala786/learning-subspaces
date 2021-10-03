@@ -33,7 +33,7 @@ if __name__ == "__main__":
         args.save_iters = []
 
         # TODO: change these paths -- this is an example.
-        args.data = "~/data"
+        args.data = "data"
         args.log_dir = (
             "learning-subspaces-results/tinyimagenet/train-ensemble-members"
         )
