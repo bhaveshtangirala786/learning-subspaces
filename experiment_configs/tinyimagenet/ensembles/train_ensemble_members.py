@@ -12,7 +12,7 @@ from main import main as run
 
 if __name__ == "__main__":
 
-    for seed in range(3):
+    for seed in range(2):
         args.seed = seed
         args.label_noise = 0.0
 
