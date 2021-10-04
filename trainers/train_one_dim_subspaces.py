@@ -118,7 +118,7 @@ def train(models, writer, data_loader, optimizers, criterion, epoch):
                         if isinstance(m, nn.Conv2d) or isinstance(
                             m, nn.BatchNorm2d
                         ):
-                            alpha = np.random.uniform(0, 1)
+                            alpha = np.random.uniform(0, 1, m.weight.shape)
                             setattr(m, f"alpha", alpha)
                 else:
                     alpha = np.random.uniform(0, 1)
